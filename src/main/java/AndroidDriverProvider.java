@@ -3,6 +3,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import com.codeborne.selenide.WebDriverProvider;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +21,7 @@ public class AndroidDriverProvider implements WebDriverProvider {
     private final static String PATH_TO_APP = "C://Users/tertychnyy/IdeaProjects/AppiumAndroidTest/apks/app-googleplay-debug.apk";
     private final static String PACKAGE_NAME = "ru.cdc.optimum.mobilecashdesk";
     private final static String ACTIVITY_NAME = "ru.cdc.optimum.mobilecashdesk.ui.activity.CDCLoginActivity";
+
 
     @Nonnull
     @Override

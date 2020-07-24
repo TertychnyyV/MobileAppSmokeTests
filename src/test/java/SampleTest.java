@@ -4,6 +4,8 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import pages.LoginPage;
+import pages.SettingsPage;
 import pages.demoPage;
 
 import static com.codeborne.selenide.Selenide.page;
@@ -19,5 +21,25 @@ public class SampleTest extends BaseTest {
     void goToFullModeTest() {
         demoPage page = page(demoPage.class);
         page.goToFullMode();
+    }
+
+    @Test
+    @Tag("UI")
+    @Severity(SeverityLevel.MINOR)
+    @Description("¬ыход из демо режима в полный режим")
+    @Step("¬ыдаем разрешени€ дл€ приложени€ / переходим в меню " +
+            "/ переводим приложение в 'полный режим' / логинемс€ под сотрудником")
+    void login() {
+        LoginPage loginPage = page(LoginPage.class);
+        SettingsPage settingsPage = page(SettingsPage.class);
+        //goToFullModeTest();
+        loginPage.goToSetting();
+        settingsPage.setIpAddress();
+        settingsPage.setPort();
+        settingsPage.goToLoginPage();
+        loginPage.enterLogin();
+        loginPage.enterPassword();
+        loginPage.pushEnterButton();
+
     }
 }
