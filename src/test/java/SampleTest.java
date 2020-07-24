@@ -1,13 +1,19 @@
 import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Test;
 import pages.demoPage;
 
 import static com.codeborne.selenide.Selenide.page;
 
+
 public class SampleTest extends BaseTest {
 
     @Test
-    @Description("Р’С‹С…РѕРґ РёР· РґРµРјРѕ СЂРµР¶РёРјР° РІ РїРѕР»РЅС‹Р№ СЂРµР¶РёРј")
+    @Severity(SeverityLevel.MINOR)
+    @Description("Выход из демо режима в полный режим")
+    @Step("Выдаем разрешения для приложения / переходим в меню / переводим приложение в 'полный режим'")
     void goToFullModeTest() {
         demoPage page = page(demoPage.class);
         page.goToFullMode();
