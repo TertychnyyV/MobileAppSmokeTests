@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SampleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-07-24T09:24:02" hostname="WKS-138" time="8.231">
+  <properties/>
+  <testcase name="goToFullModeTest()" classname="SampleTest" time="8.231"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[июл 24, 2020 12:24:01 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
