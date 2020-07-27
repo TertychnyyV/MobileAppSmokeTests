@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -19,6 +20,8 @@ public class SettingsPage {
     private final static String GO_TO_LOGIN_SCREEN = "//*[contains(@content-desc, 'Перейти вверх')]";
 
     /*--------------------------------METHODS-------------------------------------------------------------*/
+
+    @Step("Ввести адресс сервера")
     public SettingsPage setIpAddress(){
         $(By.xpath(SET_IP_BUTTON)).click();
         $(By.id(INPUT_FIELD)).setValue(IP_ADDRESS);
@@ -26,6 +29,7 @@ public class SettingsPage {
         return page(SettingsPage.class);
     }
 
+    @Step("Ввести порт")
     public SettingsPage setPort() {
         $(By.xpath(SET_PORT_BUTTON)).click();
         $(By.id(INPUT_FIELD)).setValue(PORT);
@@ -33,6 +37,7 @@ public class SettingsPage {
         return page(SettingsPage.class);
     }
 
+    @Step("Выйти из настроек")
     public SettingsPage goToLoginPage() {
         $(By.xpath(GO_TO_LOGIN_SCREEN)).click();
         return page(SettingsPage.class);

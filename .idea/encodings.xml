@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/pages/DemoPage.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/main/java/pages/demoPage.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/test/java/SampleTest.java" charset="windows-1251" />
   </component>
 </project>
