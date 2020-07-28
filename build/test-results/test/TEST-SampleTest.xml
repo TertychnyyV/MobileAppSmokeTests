@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SampleTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2020-07-27T15:33:17" hostname="WKS-138" time="34.805">
+<testsuite name="SampleTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2020-07-28T09:51:49" hostname="WKS-138" time="33.612">
   <properties/>
-  <testcase name="enterPin()" classname="SampleTest" time="6.224">
-    <failure message="Element not found {By.id: ru.cdc.optimum.mobilecashdesk:id/pass_code_view}&#13;&#10;Expected: exist&#13;&#10;Screenshot: file:/C:/Users/tertychnyy/IdeaProjects/omkSmokeTests/build/reports/tests/1595864002041.0.png&#13;&#10;Page source: file:/C:/Users/tertychnyy/IdeaProjects/omkSmokeTests/build/reports/tests/1595864002041.0.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: An element could not be located on the page using the given search parameters." type="com.codeborne.selenide.ex.ElementNotFound">Element not found {By.id: ru.cdc.optimum.mobilecashdesk:id/pass_code_view}
+  <testcase name="enterPin()" classname="SampleTest" time="6.299">
+    <failure message="Element not found {By.id: ru.cdc.optimum.mobilecashdesk:id/pass_code_view}&#13;&#10;Expected: exist&#13;&#10;Screenshot: file:/C:/Users/tertychnyy/IdeaProjects/omkSmokeTests/build/reports/tests/1595929914021.0.png&#13;&#10;Page source: file:/C:/Users/tertychnyy/IdeaProjects/omkSmokeTests/build/reports/tests/1595929914021.0.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: An element could not be located on the page using the given search parameters." type="com.codeborne.selenide.ex.ElementNotFound">Element not found {By.id: ru.cdc.optimum.mobilecashdesk:id/pass_code_view}
 Expected: exist
-Screenshot: file:/C:/Users/tertychnyy/IdeaProjects/omkSmokeTests/build/reports/tests/1595864002041.0.png
-Page source: file:/C:/Users/tertychnyy/IdeaProjects/omkSmokeTests/build/reports/tests/1595864002041.0.html
+Screenshot: file:/C:/Users/tertychnyy/IdeaProjects/omkSmokeTests/build/reports/tests/1595929914021.0.png
+Page source: file:/C:/Users/tertychnyy/IdeaProjects/omkSmokeTests/build/reports/tests/1595929914021.0.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: An element could not be located on the page using the given search parameters.
 	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:56)
@@ -19,7 +19,7 @@ Caused by: NoSuchElementException: An element could not be located on the page u
 	at org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)
 	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:51)
 	at pages.PinCodePage.enterPin(PinCodePage.java:23)
-	at SampleTest.enterPin(SampleTest.java:55)
+	at SampleTest.enterPin(SampleTest.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,7 +114,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'WKS-138', ip: '192.168.165.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, app: C://Users/tertychnyy/IdeaPr..., appActivity: ru.cdc.optimum.mobilecashde..., appPackage: ru.cdc.optimum.mobilecashdesk, automationName: Appium, databaseEnabled: false, desired: {acceptInsecureCerts: true, acceptSslCerts: true, app: C://Users/tertychnyy/IdeaPr..., appActivity: ru.cdc.optimum.mobilecashde..., appPackage: ru.cdc.optimum.mobilecashdesk, automationName: Appium, deviceName: REDMI 7A, handlesAlerts: true, javascriptEnabled: true, pageLoadStrategy: normal, platformName: android, takesScreenshot: true, version: 9}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 7A, deviceName: 023b4cac9806, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 023b4cac9806, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pageLoadStrategy: normal, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 55, takesScreenshot: true, version: 9, viewportRect: {height: 1289, left: 0, top: 55, width: 720}, warnings: {}, webStorageEnabled: false}
-Session ID: 2db692ed-1308-4a0d-875e-7c7eba7f7bd5
+Session ID: dce55308-c7a8-4078-923b-49adef72ebe6
 *** Element info: {Using=id, value=ru.cdc.optimum.mobilecashdesk:id/pass_code_view}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -149,10 +149,10 @@ Session ID: 2db692ed-1308-4a0d-875e-7c7eba7f7bd5
 	... 97 more
 </failure>
   </testcase>
-  <testcase name="goToFullModeTest()" classname="SampleTest" time="8.501"/>
-  <testcase name="login()" classname="SampleTest" time="20.077"/>
+  <testcase name="goToFullModeTest()" classname="SampleTest" time="7.636"/>
+  <testcase name="login()" classname="SampleTest" time="19.673"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[июл 27, 2020 6:33:16 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[июл 28, 2020 12:51:49 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

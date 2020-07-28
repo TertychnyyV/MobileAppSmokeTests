@@ -12,16 +12,16 @@ import static com.codeborne.selenide.Selenide.page;
 
 @Tag("OMK")
 @DisplayName("ОМК - основной тест-кейс")
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+//@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class SampleTest extends BaseTest {
 
     @Test
     @Tag("UI")
     @DisplayName("Переключение с 'Демо режима' на 'Полный режим'")
-    @Severity(SeverityLevel.MINOR)
+    @Severity(SeverityLevel.NORMAL)
     @Description("Выход из демо режима в полный режим")
     @Step("Выдаем разрешения для приложения / переходим в меню / переводим приложение в 'полный режим'")
-    @Order(1)
+    //@Order(1)
     void goToFullModeTest() {
         DemoPage demoPage = page(DemoPage.class);
         demoPage.goToFullMode();
@@ -30,10 +30,10 @@ public class SampleTest extends BaseTest {
     @Test
     @Tag("UI")
     @DisplayName("Зайти в приложение под сотрудником")
-    @Severity(SeverityLevel.MINOR)
+    @Severity(SeverityLevel.NORMAL)
     @Description("В полном режиме ввести логин и пароль сотрудника")
     @Step("Логинемся под сотрудником")
-    @Order(2)
+    //@Order(2)
     void login() {
         LoginPage loginPage = page(LoginPage.class);
         SettingsPage settingsPage = page(SettingsPage.class);
@@ -51,11 +51,12 @@ public class SampleTest extends BaseTest {
     @DisplayName("Проверка ввода пинкода")
     @Severity(SeverityLevel.NORMAL)
     @Description("Ввод и подтверждение чертырех значного пинкода")
-    @Order(3)
+    //@Order(3)
     void enterPin() {
         PinCodePage pinpage = page(PinCodePage.class);
         pinpage.enterPin();
         pinpage.enterPin();
+
     }
 
 
