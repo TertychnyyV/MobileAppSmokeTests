@@ -1,4 +1,4 @@
-package pages;
+package omcdPages;
 
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
@@ -55,6 +55,18 @@ public class LoginPage {
         return page(LoginPage.class);
     }
 
+    public LoginPage goToLogin(){
+        SettingsPage settingsPage = page(SettingsPage.class);
+        goToSetting();
+        settingsPage.setIpAddress();
+        settingsPage.setPort();
+        settingsPage.goToLoginPage();
+        enterLogin();
+        enterPassword();
+        swipeUp();
+        pushEnterButton();
+        return page(LoginPage.class);
+    }
     /*--------------------------------PROTECTED_METHODS--------------------------------------------------*/
     protected LoginPage swipeUp() {
         WebDriver driver = getWebDriver();

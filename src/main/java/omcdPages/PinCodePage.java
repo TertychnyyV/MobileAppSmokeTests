@@ -1,5 +1,6 @@
-package pages;
+package omcdPages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
@@ -18,8 +19,10 @@ public class PinCodePage {
     private final static String PIN_CODE_BLOCK = "ru.cdc.optimum.mobilecashdesk:id/pass_code_view";
 
     /*--------------------------------METHODS-------------------------------------------------------------*/
-    @Step("Р’РІРѕРґРёРј РїРёРЅРєРѕРґ")
+
+    @Step("Вводим пинкод")
     public PinCodePage enterPin() {
+        waitToLoad();
         int count = 0;
         while (count < 4) {
              pushToElementButton();
@@ -29,6 +32,11 @@ public class PinCodePage {
     }
 
     /*--------------------------------PROTECTED_METHODS--------------------------------------------------*/
+    protected PinCodePage waitToLoad(){
+        $(By.id(PIN_CODE_BLOCK)).waitUntil(Condition.visible, 60000);
+        return page(PinCodePage.class);
+    }
+
     protected PinCodePage pushToElementButton() {
         WebDriver driver = getWebDriver();
         TouchAction action = new TouchAction((PerformsTouchActions) driver);
