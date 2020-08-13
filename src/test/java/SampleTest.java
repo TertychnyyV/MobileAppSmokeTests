@@ -59,6 +59,7 @@ public class SampleTest extends BaseTest {
         pinPage.enterPin();
         pinPage.enterPin();
         mainPage.waitForMainPageLoad();
+        mainPage.createFiscalDoc("возврат");
 
     }
 

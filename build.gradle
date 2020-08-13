@@ -33,6 +33,7 @@ dependencies {
     compile('com.codeborne:selenide:5.13.0')
     compile (group: 'io.appium', name: 'java-client', version: '7.3.0')
     compile group: 'io.qameta.allure', name: 'allure-selenide', version: '2.0-BETA22'
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.1'
 }
 
 test {
