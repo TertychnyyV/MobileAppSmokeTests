@@ -23,6 +23,14 @@ public class CreateReceiptPage {
     private static final String AUTO_PICK_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/autopickingButton";
     private static final String CLEAR_SEARH_FIELD_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/search_delete_button";
 
+    /*--------------------------------ADD_ITEM_ELEMENTS----------------------------------------------------*/
+    private static final String CANCEL_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/left_button";
+    private static final String CREATE_NEW_ITEM_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/central_button";
+    private static final String ADD_ITEM_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/right_button";
+    private static final String SEARH_ITEM_STRING = "ru.cdc.optimum.mobilecashdesk:id/searchEditText";
+    private static final String TITLE = "ru.cdc.optimum.mobilecashdesk:id/alertTitle";
+    private static final String CHECK_BOX_ON_ITEM = "ru.cdc.optimum.mobilecashdesk:id/addedView";
+
     /*--------------------------------METHODS-------------------------------------------------------------*/
 
     @Step("Переходим в выбор продуктов для добавления")
@@ -36,4 +44,5 @@ public class CreateReceiptPage {
         $(By.id(PRINT_BUTTON)).click();
         return page(CreateReceiptPage.class);
     }
+
 }
