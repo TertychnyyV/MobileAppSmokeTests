@@ -18,14 +18,14 @@ public class LoginPage {
 
     /*--------------------------------DRIVER-------------------------------------------------------------*/
     /*--------------------------------VALUES-------------------------------------------------------------*/
-    private final static String LOGIN = "1002822";
-    private final static String PASSWORD = "it2rd6we";
+    private static final String LOGIN = "1002822";
+    private static final String PASSWORD = "it2rd6we";
 
     /*--------------------------------BUTTONS-------------------------------------------------------------*/
-    private final static String SETTING_BUTTON = "//*[contains(@content-desc, 'Настройки')]";
-    private final static String LOGIN_FIELD = "ru.cdc.optimum.mobilecashdesk:id/editLogin";
-    private final static String PASSWORD_FIELD = "ru.cdc.optimum.mobilecashdesk:id/editPassword";
-    private final static String ENTER_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/buttonLogin";
+    private static final String SETTING_BUTTON = "//*[contains(@content-desc, 'Настройки')]";
+    private static final String LOGIN_FIELD = "ru.cdc.optimum.mobilecashdesk:id/editLogin";
+    private static final String PASSWORD_FIELD = "ru.cdc.optimum.mobilecashdesk:id/editPassword";
+    private static final String ENTER_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/buttonLogin";
 
     /*--------------------------------METHODS-------------------------------------------------------------*/
     @Step("Перейти в настройки")

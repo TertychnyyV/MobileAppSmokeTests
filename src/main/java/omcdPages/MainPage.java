@@ -11,31 +11,31 @@ import static com.codeborne.selenide.Selenide.page;
 public class MainPage {
 
     /*--------------------------------ELEMENTS-------------------------------------------------------------*/
-    private final static String OMK_LABEL = "//*[contains(@text, 'ОМК')]";
-    private final static String WORKER_NAME = "ru.cdc.optimum.mobilecashdesk:id/userTextView";
-    private final static String WORKER_POSITION_ROLE_FIRM = "ru.cdc.optimum.mobilecashdesk:id/additionalInfoTextView";
-//    private final static String KKT_NAME = "//*[./*[contains(@text, 'Касса')]]";
-//    private final static String TERMINAL_NAME = "//*[./*[contains(@text, 'Терминал оплаты')]]";
+    private static final String OMK_LABEL = "//*[contains(@text, 'ОМК')]";
+    private static final String WORKER_NAME = "ru.cdc.optimum.mobilecashdesk:id/userTextView";
+    private static final String WORKER_POSITION_ROLE_FIRM = "ru.cdc.optimum.mobilecashdesk:id/additionalInfoTextView";
+//    private static final KKT_NAME = "//*[./*[contains(@text, 'Касса')]]";
+//    private static final String TERMINAL_NAME = "//*[./*[contains(@text, 'Терминал оплаты')]]";
     private final static String TYPE_OF_FISCAL_DOC = "//*[contains(@text, 'Выберите тип чека')]";
 
     /*--------------------------------BUTTONS-------------------------------------------------------------*/
-    private final static String OPEN_SLIDER_BUTTON = "//*[contains(@content-desc, 'Перейти вверх')]";
-    private final static String OPEN_CALENDAR_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/action_filter";
-    private final static String OPEN_FIND_STRING_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/action_search";
-    private final static String CREATE_FISCAL_DOCUMENTS_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/addRecipeButton";
-    private final static String OPEN_KKT_SETTINGS_BUTTON = "//*[./*[contains(@text, 'Касса')]]";
-    private final static String OPEN_TERMINAL_SETTINGS_BUTTON = "//*[./*[contains(@text, 'Терминал оплаты')]]";
-    private final static String OPEN_MENU_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/settingsButton";
-    private final static String FIND_BY_BARCODE_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/scanButton";
-    private final static String LOGOUT_BUTTON = "//*contains[@text, 'Выход']";
-    private final static String OK_BUTTON = "android:id/button1";
-    private final static String CANCEL_BUTTON = "android:id/button2";
+    private static final String OPEN_SLIDER_BUTTON = "//*[contains(@content-desc, 'Перейти вверх')]";
+    private static final String OPEN_CALENDAR_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/action_filter";
+    private static final String OPEN_FIND_STRING_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/action_search";
+    private static final String CREATE_FISCAL_DOCUMENTS_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/addRecipeButton";
+    private static final String OPEN_KKT_SETTINGS_BUTTON = "//*[./*[contains(@text, 'Касса')]]";
+    private static final String OPEN_TERMINAL_SETTINGS_BUTTON = "//*[./*[contains(@text, 'Терминал оплаты')]]";
+    private static final String OPEN_MENU_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/settingsButton";
+    private static final String FIND_BY_BARCODE_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/scanButton";
+    private static final String LOGOUT_BUTTON = "//*contains[@text, 'Выход']";
+    private static final String OK_BUTTON = "android:id/button1";
+    private static final String CANCEL_BUTTON = "android:id/button2";
 
     /*----------------------------FISCAL_DOCUMENTS---------------------------------------------------------*/
-    private final static String SALE_ORDER = "//*[contains(@text, 'Продажа')]";
-    private final static String RETURN_SALE = "//*[contains(@text, 'Возврат продажи')]";
-    private final static String PARRISH_CORRECTION = "//*[contains(@text, 'Коррекция прихода')]";
-    private final static String FLOW_CORRECTION = "//*[contains(@text, 'Коррекция расхода')]";
+    private static final String SALE_ORDER = "//*[contains(@text, 'Продажа')]";
+    private static final String RETURN_SALE = "//*[contains(@text, 'Возврат продажи')]";
+    private static final String PARRISH_CORRECTION = "//*[contains(@text, 'Коррекция прихода')]";
+    private static final String FLOW_CORRECTION = "//*[contains(@text, 'Коррекция расхода')]";
 
     /*--------------------------------METHODS-------------------------------------------------------------*/
 

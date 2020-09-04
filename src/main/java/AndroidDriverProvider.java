@@ -16,11 +16,13 @@ import static io.appium.java_client.remote.AndroidMobileCapabilityType.APP_PACKA
 
 public class AndroidDriverProvider implements WebDriverProvider {
 
-    private final static String VERSION = "9";
-    private final static String DEVICE_NAME = "REDMI 7A";
-    private final static String PATH_TO_APP = "C://Users/tertychnyy/IdeaProjects/AppiumAndroidTest/apks/app-googleplay-debug.apk";
-    private final static String PACKAGE_NAME = "ru.cdc.optimum.mobilecashdesk";
-    private final static String ACTIVITY_NAME = "ru.cdc.optimum.mobilecashdesk.ui.activity.CDCLoginActivity";
+    /*---------------------------VALUES-------------------------------------------------------------------------------*/
+
+    private static final String VERSION = "9";
+    private static final String DEVICE_NAME = "REDMI 7A";
+    private static final String PATH_TO_APP = "C://Users/tertychnyy/IdeaProjects/AppiumAndroidTest/apks/app-googleplay-debug.apk";
+    private static final String PACKAGE_NAME = "ru.cdc.optimum.mobilecashdesk";
+    private static final String ACTIVITY_NAME = "ru.cdc.optimum.mobilecashdesk.ui.activity.CDCLoginActivity";
 
 
     @Nonnull

@@ -16,24 +16,27 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 public class PinCodePage {
 
     /*--------------------------------ELEMENT-------------------------------------------------------------*/
-    private final static String PIN_CODE_BLOCK = "ru.cdc.optimum.mobilecashdesk:id/pass_code_view";
+    private static final String PIN_CODE_BLOCK = "ru.cdc.optimum.mobilecashdesk:id/pass_code_view";
+
+    /*--------------------------------VALUES-------------------------------------------------------------*/
+    private static final int PIN_SIZE = 4;
+    private static final int LOADING_TIMEOUT = 60000;
 
     /*--------------------------------METHODS-------------------------------------------------------------*/
 
+    //
     @Step("¬водим пинкод")
     public PinCodePage enterPin() {
         waitToLoad();
-        int count = 0;
-        while (count < 4) {
-             pushToElementButton();
-             count++;
+        for(int count=0; count<PIN_SIZE; count++){
+            pushToElementButton();
         }
         return page(PinCodePage.class);
     }
 
     /*--------------------------------PROTECTED_METHODS--------------------------------------------------*/
     protected PinCodePage waitToLoad(){
-        $(By.id(PIN_CODE_BLOCK)).waitUntil(Condition.visible, 60000);
+        $(By.id(PIN_CODE_BLOCK)).waitUntil(Condition.visible, LOADING_TIMEOUT);
         return page(PinCodePage.class);
     }
 
@@ -45,9 +48,9 @@ public class PinCodePage {
         int right_x = left_x + element.getSize().getWidth();
         int upper_y = element.getLocation().getY();
         int lower_y = upper_y + element.getSize().getHeight();
-        int midle_x = (right_x + left_x) / 2;
-        int midle_y = (upper_y + lower_y) / 2;
-        PointOption point = PointOption.point(midle_x, midle_y);
+        int middle_x = (right_x + left_x) / 2;
+        int middle_y = (upper_y + lower_y) / 2;
+        PointOption point = PointOption.point(middle_x, middle_y);
         action.press(point).release().perform();
         return page(PinCodePage.class);
     }

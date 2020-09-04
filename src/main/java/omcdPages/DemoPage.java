@@ -9,12 +9,12 @@ import static com.codeborne.selenide.Selenide.page;
 public class DemoPage {
 
     /*--------------------------------BUTTONS-------------------------------------------------------------*/
-    private final static String SET_PERMISSION_BUTTON = "//*[contains(@text, 'ПРЕДОСТАВИТЬ')]";
-    private final static String SET_PERMISSION_TO_WRITE_BUTTON = "//*[contains(@text, 'РАЗРЕШИТЬ')]";
-    private final static String SET_PERMISSION_TO_CALL_BUTTON = "//*[contains(@text, 'РАЗРЕШИТЬ')]";
-    private final static String OPEN_SLIDER_BUTTON = "//*[contains(@content-desc, 'Перейти вверх')]";
-    private final static String MENU_BUTTON = "//*[contains(@resource-id, 'settingsButton')]";
-    private final static String FULL_MODE_BUTTON = "//*[contains(@text, 'Полный режим')]";
+    private static final String SET_PERMISSION_BUTTON = "//*[contains(@text, 'ПРЕДОСТАВИТЬ')]";
+    private static final String SET_PERMISSION_TO_WRITE_BUTTON = "//*[contains(@text, 'РАЗРЕШИТЬ')]";
+    private static final String SET_PERMISSION_TO_CALL_BUTTON = "//*[contains(@text, 'РАЗРЕШИТЬ')]";
+    private static final String OPEN_SLIDER_BUTTON = "//*[contains(@content-desc, 'Перейти вверх')]";
+    private static final String MENU_BUTTON = "//*[contains(@resource-id, 'settingsButton')]";
+    private static final String FULL_MODE_BUTTON = "//*[contains(@text, 'Полный режим')]";
 
 
     /*--------------------------------METHODS-------------------------------------------------------------*/
