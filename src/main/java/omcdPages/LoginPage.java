@@ -22,33 +22,33 @@ public class LoginPage {
     private static final String PASSWORD = "it2rd6we";
 
     /*--------------------------------BUTTONS-------------------------------------------------------------*/
-    private static final String SETTING_BUTTON = "//*[contains(@content-desc, 'Настройки')]";
+    private static final String SETTING_BUTTON = "//*[contains(@content-desc, '?????????')]";
     private static final String LOGIN_FIELD = "ru.cdc.optimum.mobilecashdesk:id/editLogin";
     private static final String PASSWORD_FIELD = "ru.cdc.optimum.mobilecashdesk:id/editPassword";
     private static final String ENTER_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/buttonLogin";
 
     /*--------------------------------METHODS-------------------------------------------------------------*/
-    @Step("Перейти в настройки")
+    @Step("??????? ? ?????????")
     public LoginPage goToSetting() {
         $(By.xpath(SETTING_BUTTON)).click();
         return page(LoginPage.class);
     }
 
-    @Step("Ввести логин")
+    @Step("?????? ?????")
     public LoginPage enterLogin() {
         $(By.id(LOGIN_FIELD)).click();
         $(By.id(LOGIN_FIELD)).setValue(LOGIN);
         return page(LoginPage.class);
     }
 
-    @Step("Ввести пароль")
+    @Step("?????? ??????")
     public LoginPage enterPassword() {
         $(By.id(PASSWORD_FIELD)).click();
         $(By.id(PASSWORD_FIELD)).setValue(PASSWORD);
         return page(LoginPage.class);
     }
 
-    @Step("Нажать кнопку вход")
+    @Step("?????? ?????? ????")
     public LoginPage pushEnterButton() {
         swipeUp();
         $(By.id(ENTER_BUTTON)).click();
@@ -68,6 +68,7 @@ public class LoginPage {
         return page(LoginPage.class);
     }
     /*--------------------------------PROTECTED_METHODS--------------------------------------------------*/
+    @Step("?????? ????? ?????")
     protected LoginPage swipeUp() {
         WebDriver driver = getWebDriver();
 

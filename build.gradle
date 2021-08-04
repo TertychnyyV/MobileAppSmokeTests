@@ -21,9 +21,10 @@ allure {
 
 }
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.9
 
 dependencies {
+    implementation 'junit:junit:4.12'
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.6.2")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.2")
     testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.6.2")
@@ -39,3 +40,4 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+targetCompatibility = JavaVersion.VERSION_1_9

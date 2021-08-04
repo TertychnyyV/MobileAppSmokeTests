@@ -9,16 +9,16 @@ import static com.codeborne.selenide.Selenide.page;
 public class DemoPage {
 
     /*--------------------------------BUTTONS-------------------------------------------------------------*/
-    private static final String SET_PERMISSION_BUTTON = "//*[contains(@text, 'œ–≈ƒŒ—“¿¬»“‹')]";
-    private static final String SET_PERMISSION_TO_WRITE_BUTTON = "//*[contains(@text, '–¿«–≈ÿ»“‹')]";
-    private static final String SET_PERMISSION_TO_CALL_BUTTON = "//*[contains(@text, '–¿«–≈ÿ»“‹')]";
-    private static final String OPEN_SLIDER_BUTTON = "//*[contains(@content-desc, 'œÂÂÈÚË ‚‚Âı')]";
+    private static final String SET_PERMISSION_BUTTON = "//*[contains(@text, '–ü–†–ï–î–û–°–¢–ê–í–ò–¢–¨')]";
+    private static final String SET_PERMISSION_TO_WRITE_BUTTON = "//*[contains(@text, '–†–ê–ó–†–ï–®–ò–¢–¨')]";
+    private static final String SET_PERMISSION_TO_CALL_BUTTON = "//*[contains(@text, '–†–ê–ó–†–ï–®–ò–¢–¨')]";
+    private static final String OPEN_SLIDER_BUTTON = "//*[contains(@content-desc, '–ü–µ—Ä–µ–π—Ç–∏ –≤–≤–µ—Ä—Ö')]";
     private static final String MENU_BUTTON = "//*[contains(@resource-id, 'settingsButton')]";
-    private static final String FULL_MODE_BUTTON = "//*[contains(@text, 'œÓÎÌ˚È ÂÊËÏ')]";
+    private static final String FULL_MODE_BUTTON = "//*[contains(@text, '–ü–æ–ª–Ω—ã–π —Ä–µ–∂–∏–º')]";
 
 
     /*--------------------------------METHODS-------------------------------------------------------------*/
-    @Step("œÂÂÈÚË ‚ ÔÓÎÌ˚È ÂÊËÏ")
+    @Step("–ü–µ—Ä–µ–π—Ç–∏ –≤ –ø–æ–ª–Ω—ã–π —Ä–µ–∂–∏–º")
     public DemoPage goToFullMode(){
         $(By.xpath(SET_PERMISSION_BUTTON)).click();
         $(By.xpath(SET_PERMISSION_TO_WRITE_BUTTON)).click();

@@ -33,13 +33,13 @@ public class CreateReceiptPage {
 
     /*--------------------------------METHODS-------------------------------------------------------------*/
 
-    @Step("Переходим в выбор продуктов для добавления")
+    @Step("РџРµСЂРµС…РѕРґРёРј РІ РІС‹Р±РѕСЂ РїСЂРѕРґСѓРєС‚РѕРІ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ")
     public CreateReceiptPage addProduct(){
         $(By.id(ADD_PRODUCT_BUTTON)).click();
         return page(CreateReceiptPage.class);
     }
 
-    @Step("Переходим в печать чека на ККТ")
+    @Step("РџРµСЂРµС…РѕРґРёРј РІ РїРµС‡Р°С‚СЊ С‡РµРєР° РЅР° РљРљРў")
     public CreateReceiptPage printReceipt(){
         $(By.id(PRINT_BUTTON)).click();
         return page(CreateReceiptPage.class);

@@ -1,23 +1,22 @@
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Step;
 import omcdPages.*;
 import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Selenide.page;
 
 @Tag("OMK")
-@DisplayName("ОМК - основной тест-кейс")
+@DisplayName("РћРњРљ - РѕСЃРЅРѕРІРЅРѕР№ С‚РµСЃС‚-РєРµР№СЃ")
 //@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class SampleTest extends BaseTest {
 //
 //    @Test
 //    @Tag("UI")
-//    @DisplayName("Переключение с 'Демо режима' на 'Полный режим'")
+//    @DisplayName("РџРµСЂРµРєР»СЋС‡РµРЅРёРµ СЃ 'Р”РµРјРѕ СЂРµР¶РёРјР°' РЅР° 'РџРѕР»РЅС‹Р№ СЂРµР¶РёРј'")
 //    @Severity(SeverityLevel.NORMAL)
-//    @Description("Выход из демо режима в полный режим")
-//    @Step("Выдаем разрешения для приложения / переходим в меню / переводим приложение в 'полный режим'")
+//    @Description("Р’С‹С…РѕРґ РёР· РґРµРјРѕ СЂРµР¶РёРјР° РІ РїРѕР»РЅС‹Р№ СЂРµР¶РёРј")
+//    @Step("Р’С‹РґР°РµРј СЂР°Р·СЂРµС€РµРЅРёСЏ РґР»СЏ РїСЂРёР»РѕР¶РµРЅРёСЏ / РїРµСЂРµС…РѕРґРёРј РІ РјРµРЅСЋ / РїРµСЂРµРІРѕРґРёРј РїСЂРёР»РѕР¶РµРЅРёРµ РІ 'РїРѕР»РЅС‹Р№ СЂРµР¶РёРј'")
 //    //@Order(1)
 //    void goToFullModeTest() {
 //        DemoPage demoPage = page(DemoPage.class);
@@ -26,10 +25,10 @@ public class SampleTest extends BaseTest {
 //
 //    @Test
 //    @Tag("UI")
-//    @DisplayName("Зайти в приложение под сотрудником")
+//    @DisplayName("Р—Р°Р№С‚Рё РІ РїСЂРёР»РѕР¶РµРЅРёРµ РїРѕРґ СЃРѕС‚СЂСѓРґРЅРёРєРѕРј")
 //    @Severity(SeverityLevel.NORMAL)
-//    @Description("В полном режиме ввести логин и пароль сотрудника")
-//    @Step("Логинемся под сотрудником")
+//    @Description("Р’ РїРѕР»РЅРѕРј СЂРµР¶РёРјРµ РІРІРµСЃС‚Рё Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ СЃРѕС‚СЂСѓРґРЅРёРєР°")
+//    @Step("Р›РѕРіРёРЅРµРјСЃСЏ РїРѕРґ СЃРѕС‚СЂСѓРґРЅРёРєРѕРј")
 //    //@Order(2)
 //    void loginTest() {
 //        LoginPage loginPage = page(LoginPage.class);
@@ -45,9 +44,9 @@ public class SampleTest extends BaseTest {
 
     @Test
     @Tag("UI")
-    @DisplayName("Проверка ввода пинкода")
+    @DisplayName("РџСЂРѕРІРµСЂРєР° РІРІРѕРґР° РїРёРЅРєРѕРґР°")
     @Severity(SeverityLevel.NORMAL)
-    @Description("Ввод и подтверждение чертырех значного пинкода")
+    @Description("Р’РІРѕРґ Рё РїРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ С‡РµСЂС‚С‹СЂРµС… Р·РЅР°С‡РЅРѕРіРѕ РїРёРЅРєРѕРґР°")
     //@Order(3)
     void enterPin() {
         PinCodePage pinPage = page(PinCodePage.class);
@@ -59,7 +58,7 @@ public class SampleTest extends BaseTest {
         pinPage.enterPin();
         pinPage.enterPin();
         mainPage.waitForMainPageLoad();
-        mainPage.createFiscalDoc("возврат");
+        mainPage.createFiscalDoc("РІРѕР·РІСЂР°С‚");
 
     }
 

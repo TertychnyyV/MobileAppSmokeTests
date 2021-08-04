@@ -13,15 +13,15 @@ public class SettingsPage {
     private static final String PORT = "11127";
 
     /*--------------------------------BUTTONS-------------------------------------------------------------*/
-    private static final String SET_IP_BUTTON = "//*[./*[contains(@text, 'Адрес сервера')]]";
-    private static final String SET_PORT_BUTTON = "//*[./*[contains(@text, 'Порт')]]";
+    private static final String SET_IP_BUTTON = "//*[./*[contains(@text, 'РђРґСЂРµСЃ СЃРµСЂРІРµСЂР°')]]";
+    private static final String SET_PORT_BUTTON = "//*[./*[contains(@text, 'РџРѕСЂС‚')]]";
     private static final String INPUT_FIELD = "android:id/edit";
     private static final String OK_BUTTON = "android:id/button1";
-    private static final String GO_TO_LOGIN_SCREEN = "//*[contains(@content-desc, 'Перейти вверх')]";
+    private static final String GO_TO_LOGIN_SCREEN = "//*[contains(@content-desc, 'РџРµСЂРµР№С‚Рё РІРІРµСЂС…')]";
 
     /*--------------------------------METHODS-------------------------------------------------------------*/
 
-    @Step("Ввести адресс сервера")
+    @Step("Р’РІРµСЃС‚Рё Р°РґСЂРµСЃСЃ СЃРµСЂРІРµСЂР°")
     public SettingsPage setIpAddress(){
         $(By.xpath(SET_IP_BUTTON)).click();
         $(By.id(INPUT_FIELD)).setValue(IP_ADDRESS);
@@ -29,7 +29,7 @@ public class SettingsPage {
         return page(SettingsPage.class);
     }
 
-    @Step("Ввести порт")
+    @Step("Р’РІРµСЃС‚Рё РїРѕСЂС‚")
     public SettingsPage setPort() {
         $(By.xpath(SET_PORT_BUTTON)).click();
         $(By.id(INPUT_FIELD)).setValue(PORT);
@@ -37,7 +37,7 @@ public class SettingsPage {
         return page(SettingsPage.class);
     }
 
-    @Step("Выйти из настроек")
+    @Step("Р’С‹Р№С‚Рё РёР· РЅР°СЃС‚СЂРѕРµРє")
     public SettingsPage goToLoginPage() {
         $(By.xpath(GO_TO_LOGIN_SCREEN)).click();
         return page(SettingsPage.class);

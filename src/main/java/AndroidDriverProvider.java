@@ -3,7 +3,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import com.codeborne.selenide.WebDriverProvider;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +19,7 @@ public class AndroidDriverProvider implements WebDriverProvider {
 
     private static final String VERSION = "9";
     private static final String DEVICE_NAME = "REDMI 7A";
-    private static final String PATH_TO_APP = "C://Users/tertychnyy/IdeaProjects/AppiumAndroidTest/apks/app-googleplay-debug.apk";
+    private static final String PATH_TO_APP = "C://Users//tertychnyy//IdeaProjects//omkSmokeTests//apk//app-googleplay-debug.apk";
     private static final String PACKAGE_NAME = "ru.cdc.optimum.mobilecashdesk";
     private static final String ACTIVITY_NAME = "ru.cdc.optimum.mobilecashdesk.ui.activity.CDCLoginActivity";
 

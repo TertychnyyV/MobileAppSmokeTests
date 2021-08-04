@@ -25,7 +25,7 @@ public class PinCodePage {
     /*--------------------------------METHODS-------------------------------------------------------------*/
 
     //
-    @Step("Вводим пинкод")
+    @Step("Р’РІРѕРґРёРј РїРёРЅРєРѕРґ")
     public PinCodePage enterPin() {
         waitToLoad();
         for(int count=0; count<PIN_SIZE; count++){

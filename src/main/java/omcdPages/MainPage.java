@@ -11,81 +11,82 @@ import static com.codeborne.selenide.Selenide.page;
 public class MainPage {
 
     /*--------------------------------ELEMENTS-------------------------------------------------------------*/
-    private static final String OMK_LABEL = "//*[contains(@text, 'ОМК')]";
+    private static final String OMK_LABEL = "//*[contains(@text, 'РћРњРљ')]";
     private static final String WORKER_NAME = "ru.cdc.optimum.mobilecashdesk:id/userTextView";
     private static final String WORKER_POSITION_ROLE_FIRM = "ru.cdc.optimum.mobilecashdesk:id/additionalInfoTextView";
-//    private static final KKT_NAME = "//*[./*[contains(@text, 'Касса')]]";
-//    private static final String TERMINAL_NAME = "//*[./*[contains(@text, 'Терминал оплаты')]]";
-    private final static String TYPE_OF_FISCAL_DOC = "//*[contains(@text, 'Выберите тип чека')]";
+//    private static final String MAIN_KKT_NAME =
+//    private static final SLIDER_KKT_NAME = "//*[./*[contains(@text, 'РљР°СЃСЃР°')]]";
+//    private static final String SLIDER_TERMINAL_NAME = "//*[./*[contains(@text, 'РўРµСЂРјРёРЅР°Р» РѕРїР»Р°С‚С‹')]]";
+    private final static String TYPE_OF_FISCAL_DOC = "//*[contains(@text, 'Р’С‹Р±РµСЂРёС‚Рµ С‚РёРї С‡РµРєР°')]";
 
     /*--------------------------------BUTTONS-------------------------------------------------------------*/
-    private static final String OPEN_SLIDER_BUTTON = "//*[contains(@content-desc, 'Перейти вверх')]";
+    private static final String OPEN_SLIDER_BUTTON = "//*[contains(@content-desc, 'РџРµСЂРµР№С‚Рё РІРІРµСЂС…')]";
     private static final String OPEN_CALENDAR_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/action_filter";
     private static final String OPEN_FIND_STRING_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/action_search";
     private static final String CREATE_FISCAL_DOCUMENTS_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/addRecipeButton";
-    private static final String OPEN_KKT_SETTINGS_BUTTON = "//*[./*[contains(@text, 'Касса')]]";
-    private static final String OPEN_TERMINAL_SETTINGS_BUTTON = "//*[./*[contains(@text, 'Терминал оплаты')]]";
+    private static final String OPEN_KKT_SETTINGS_BUTTON = "//*[./*[contains(@text, 'РљР°СЃСЃР°')]]";
+    private static final String OPEN_TERMINAL_SETTINGS_BUTTON = "//*[./*[contains(@text, 'РўРµСЂРјРёРЅР°Р» РѕРїР»Р°С‚С‹')]]";
     private static final String OPEN_MENU_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/settingsButton";
     private static final String FIND_BY_BARCODE_BUTTON = "ru.cdc.optimum.mobilecashdesk:id/scanButton";
-    private static final String LOGOUT_BUTTON = "//*contains[@text, 'Выход']";
+    private static final String LOGOUT_BUTTON = "//*[contains(@text, 'Р’С‹С…РѕРґ')]";
     private static final String OK_BUTTON = "android:id/button1";
     private static final String CANCEL_BUTTON = "android:id/button2";
 
     /*----------------------------FISCAL_DOCUMENTS---------------------------------------------------------*/
-    private static final String SALE_ORDER = "//*[contains(@text, 'Продажа')]";
-    private static final String RETURN_SALE = "//*[contains(@text, 'Возврат продажи')]";
-    private static final String PARRISH_CORRECTION = "//*[contains(@text, 'Коррекция прихода')]";
-    private static final String FLOW_CORRECTION = "//*[contains(@text, 'Коррекция расхода')]";
+    private static final String SALE_ORDER = "//*[contains(@text, 'РџСЂРѕРґР°Р¶Р°')]";
+    private static final String RETURN_SALE = "//*[contains(@text, 'Р’РѕР·РІСЂР°С‚ РїСЂРѕРґР°Р¶Рё')]";
+    private static final String PARRISH_CORRECTION = "//*[contains(@text, 'РљРѕСЂСЂРµРєС†РёСЏ РїСЂРёС…РѕРґР°')]";
+    private static final String FLOW_CORRECTION = "//*[contains(@text, 'РљРѕСЂСЂРµРєС†РёСЏ СЂР°СЃС…РѕРґР°')]";
 
     /*--------------------------------METHODS-------------------------------------------------------------*/
 
-    @Step("Ждем загрузки главной страницы ОМК")
+    @Step("Р–РґРµРј Р·Р°РіСЂСѓР·РєРё РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†С‹ РћРњРљ")
     public MainPage waitForMainPageLoad(){
         $(By.xpath(OMK_LABEL));
         return page(MainPage.class);
     }
 
-    @Step("открываем боковой слайдер")
+    @Step("РѕС‚РєСЂС‹РІР°РµРј Р±РѕРєРѕРІРѕР№ СЃР»Р°Р№РґРµСЂ")
     public MainPage openSlider(){
         $(By.xpath(OPEN_SLIDER_BUTTON)).click();
         return page(MainPage.class);
     }
 
-    @Step("Открываем строку поиска")
+    @Step("РћС‚РєСЂС‹РІР°РµРј СЃС‚СЂРѕРєСѓ РїРѕРёСЃРєР°")
     public MainPage finFiscalDoc(){
         $(By.id(OPEN_FIND_STRING_BUTTON)).click();
         return page(MainPage.class);
     }
 
-    @Step("Открываем календарь")
+    @Step("РћС‚РєСЂС‹РІР°РµРј РєР°Р»РµРЅРґР°СЂСЊ")
     public MainPage openCalendar(){
         $(By.id(OPEN_CALENDAR_BUTTON)).click();
         return page(MainPage.class);
     }
 
-    @Step("Создаем фискальный документ")
+    @Step("РЎРѕР·РґР°РµРј С„РёСЃРєР°Р»СЊРЅС‹Р№ РґРѕРєСѓРјРµРЅС‚")
     public MainPage createFiscalDoc(@Nonnull String fiscalDoc){
         $(By.id(CREATE_FISCAL_DOCUMENTS_BUTTON)).click();
         switch (fiscalDoc.toLowerCase()){
-            case "продажа":
+            case "РїСЂРѕРґР°Р¶Р°":
                 $(By.xpath(SALE_ORDER)).click();
                 $(By.id(OK_BUTTON)).click();
                 break;
-            case "возврат":
+            case "РІРѕР·РІСЂР°С‚":
                 $(By.xpath(RETURN_SALE)).click();
                 $(By.id(OK_BUTTON)).click();
                 break;
-            case "коррекция прихода":
+            case "РєРѕСЂСЂРµРєС†РёСЏ РїСЂРёС…РѕРґР°":
                 $(By.xpath(PARRISH_CORRECTION)).click();
                 $(By.id(OK_BUTTON)).click();
                 break;
-            case "коррекция расхода":
+            case "РєРѕСЂСЂРµРєС†РёСЏ СЂР°СЃС…РѕРґР°":
                 $(By.xpath(FLOW_CORRECTION)).click();
                 $(By.id(OK_BUTTON)).click();
                 break;
             default:
-                System.out.println("Такого типа документов нет либо не выбрано значение, " +
-                                    "выходим из создания фискального документа");
+                System.out.println("РўР°РєРѕРіРѕ С‚РёРїР° РґРѕРєСѓРјРµРЅС‚РѕРІ РЅРµС‚ Р»РёР±Рѕ РЅРµ РІС‹Р±СЂР°РЅРѕ Р·РЅР°С‡РµРЅРёРµ, " +
+                                    "РІС‹С…РѕРґРёРј РёР· СЃРѕР·РґР°РЅРёСЏ С„РёСЃРєР°Р»СЊРЅРѕРіРѕ РґРѕРєСѓРјРµРЅС‚Р°");
                 $(By.id(CANCEL_BUTTON)).click();
                 break;
         }
@@ -94,31 +95,31 @@ public class MainPage {
 
     /*-------------------------SLIDER-METHODS-------------------------------------------------------------*/
 
-    @Step("Преходим в настройки терминала")
+    @Step("РџСЂРµС…РѕРґРёРј РІ РЅР°СЃС‚СЂРѕР№РєРё С‚РµСЂРјРёРЅР°Р»Р°")
     public MainPage goToTerminalSettings(){
         $(By.xpath(OPEN_TERMINAL_SETTINGS_BUTTON)).click();
         return page(MainPage.class);
     }
 
-    @Step("Переходим в настройки ККТ")
+    @Step("РџРµСЂРµС…РѕРґРёРј РІ РЅР°СЃС‚СЂРѕР№РєРё РљРљРў")
     public MainPage goToKktSettings(){
         $(By.xpath(OPEN_KKT_SETTINGS_BUTTON)).click();
         return page(MainPage.class);
     }
 
-    @Step("Переходим в настройки")
+    @Step("РџРµСЂРµС…РѕРґРёРј РІ РЅР°СЃС‚СЂРѕР№РєРё")
     public MainPage goToSettings(){
         $(By.id(OPEN_MENU_BUTTON)).click();
         return page(MainPage.class);
     }
 
-    @Step("Выходим из аккаунта сотрудника")
+    @Step("Р’С‹С…РѕРґРёРј РёР· Р°РєРєР°СѓРЅС‚Р° СЃРѕС‚СЂСѓРґРЅРёРєР°")
     public MainPage logout(){
         $(By.xpath(LOGOUT_BUTTON)).click();
         return page(MainPage.class);
     }
 
-    @Step("Переходим в поиск чека по штрих коду")
+    @Step("РџРµСЂРµС…РѕРґРёРј РІ РїРѕРёСЃРє С‡РµРєР° РїРѕ С€С‚СЂРёС… РєРѕРґСѓ")
     public MainPage findByScan(){
         $(By.id(FIND_BY_BARCODE_BUTTON)).click();
         return page(MainPage.class);
